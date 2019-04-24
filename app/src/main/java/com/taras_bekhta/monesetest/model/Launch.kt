@@ -13,7 +13,10 @@ data class Launch(
     var launchDateUTC: Long = -1,
 
     @SerializedName("rocket")
-    var rocketInfo: RocketInfo
+    var rocketInfo: RocketInfo,
+
+    @SerializedName("mission_id")
+    var missionId: ArrayList<String> = arrayListOf()
 )
 
 data class RocketInfo(

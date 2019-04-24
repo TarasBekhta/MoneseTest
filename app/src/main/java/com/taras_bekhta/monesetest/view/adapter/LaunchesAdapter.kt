@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.taras_bekhta.monesetest.R
 import com.taras_bekhta.monesetest.model.Launch
@@ -59,6 +60,11 @@ class LaunchesAdapter @Inject constructor(private var context: Context): Recycle
         launchDate.timeInMillis = currLaunch.launchDateUTC * 1000
         holder.launchDateTextView.text = dateFormat.format(launchDate.time)
 
+        holder.launchMissionIdTextView.text = ""
+        for(id in currLaunch.missionId) {
+            holder.launchMissionIdTextView.append("$id; ")
+        }
+
         holder.itemView.setOnClickListener {
             listener?.launchItemClicked(currLaunch.rocketInfo.rocketId)
         }
@@ -103,5 +109,6 @@ class LaunchesAdapter @Inject constructor(private var context: Context): Recycle
         val launchNumberTextView: TextView = view.launchNumberTextView
         val launchTitleTextView: TextView = view.launchTitleTextView
         val launchDateTextView: TextView = view.launchDateTextView
+        val launchMissionIdTextView: TextView = view.missionIdTextView
     }
 }

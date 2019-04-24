@@ -29,6 +29,7 @@
             app:layout_constraintLeft_toRightOf="@id/launchNumberTextView"/>
 
     <LinearLayout
+            android:id="@+id/launchDateLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -51,6 +52,33 @@
                 android:gravity="center_vertical"
                 android:textColor="@color/black"
                 android:text="02/19/19"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/missionIdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintTop_toBottomOf="@id/launchDateLayout"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/date_size"
+                android:gravity="center_vertical"
+                android:text="Mission id: "/>
+
+        <TextView
+                android:id="@+id/missionIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/date_size"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text=""/>
 
     </LinearLayout>
 
