@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_main"
+            app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment" android:name="com.taras_bekhta.monesetest.view.MainFragment"
+              android:label="main_fragment" tools:layout="@layout/main_fragment">
+        <action android:id="@+id/action_mainFragment_to_rocketDetailsFragment"
+                app:destination="@id/rocketDetailsFragment"/>
+    </fragment>
+    <fragment android:id="@+id/rocketDetailsFragment"
+              android:name="com.taras_bekhta.monesetest.view.RocketDetailsFragment"
+              android:label="rocket_details_fragment" tools:layout="@layout/rocket_details_fragment">
+        <argument android:name="rocketId" app:argType="string"/>
+    </fragment>
+</navigation>

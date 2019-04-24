@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MoneseTest</string>
+    <string name="active">Active</string>
+    <string name="stages">Stages: </string>
+    <string name="cost_per_launch">Cost per launch: </string>
+    <string name="not_active">Not active</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_date">Sort by date</string>
+    <string name="order">Order</string>
+    <string name="order_descending">Order descending</string>
+    <string name="order_ascending">Order ascending</string>
+    <string name="filter">Filter</string>
+    <string name="upcoming_only">Upcoming only</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="halfMargin">8dp</dimen>
+    <dimen name="defaultMargin">16dp</dimen>
+    <dimen name="doubleMargin">32dp</dimen>
+
+    <dimen name="launchTitleSize">18sp</dimen>
+    <dimen name="date_size">12sp</dimen>
+</resources>
